@@ -1,6 +1,6 @@
 <?php
-// Безопасное получение значения из GET
-$searchValue = $_GET['search'] ?? '';
+$searchName = $searchName ?? 'search';
+$searchValue = $_GET[$searchName] ?? '';
 $searchValue = htmlspecialchars($searchValue, ENT_QUOTES | ENT_HTML5, 'UTF-8');
 ?>
 
